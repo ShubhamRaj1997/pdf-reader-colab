@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" type="module"></script>
+    <style>
+        body {
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 95vh;
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 10px;
+        }
+        #message-container {
+            border: 1px solid black;
+            flex-grow: 1;
+            overflow-y: auto;
+        }
+        #message-container div {
+            background-color: #CCC;
+            padding: 5px;
+        }
+        #form {
+            width: 50%;
+        }
+        button {
+            margin: 10px 0;
+        }
+        #room {
+            margin-right: 16px;
+        }
+    </style>
+    <link rel="stylesheet" href="./css/style.css">
+
+    <title>Document</title>
+    <style>
+        #canvas_container {
+            width: 800px;
+            height: 450px;
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="my_pdf_viewer">
+        <div id="canvas_container">
+            <canvas id="pdf_renderer"></canvas>
+        </div>
+        <div id="navigation_controls">
+            <button id="go_previous">Previous</button>
+            <input id="current_page" value="1" type="number"/>
+            <button id="go_next">Next</button>
+        </div>
+ 
+        <div id="zoom_controls">  
+            <button id="zoom_in">+</button>
+            <button id="zoom_out">-</button>
+        </div>
+        
+    </div>
+    
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.0.943/pdf.min.js">
+</script>
+</body>
+</html>
