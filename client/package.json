@@ -1,0 +1,21 @@
+{
+  "type": "module",
+  "name": "client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "snowpack dev --polyfill-node",
+    "build": "snowpack build --polyfill-node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "setimmediate": "^1.0.5",
+    "socket.io-client": "^4.2.0"
+  },
+  "devDependencies": {
+    "snowpack": "^3.8.8"
+  }
+}
